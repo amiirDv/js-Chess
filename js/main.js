@@ -367,4 +367,18 @@ function seleciona(x,y){
 
 
 
+}
 
+  function escolhe(pecae,core){
+      peca[xe][ye]['peca']=pecae;
+      document.getElementById("t"+xe+""+ye).innerHTML = il[core][pecae];
+      document.getElementById('escolhe'+core).style.display='none';
+      document.getElementById('fundo').style.display='none';
+  }
+
+  function escolhecor_incio(cor){
+      document.getElementById('escolhecor-inicio').style.display='none';
+      document.getElementById('fundo').style.display='none';
+      vez = cor; //vez de quem jogar
+
+  }
